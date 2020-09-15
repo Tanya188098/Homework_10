@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 10 - Scale with slider</title>
+</head>
+
+<body>
+    <style>
+        .scale {
+            transform: rotate(180deg);
+            height: 100px;
+            width: 40px;
+            border: 2px solid black;
+            position: absolute;
+        }
+
+        .color {
+            width: 40px;
+            position: relative;
+            background: linear-gradient(to bottom, #14ff00 50px, #ffff00 75px, #ff0000);
+        }
+    </style>
+    <input type="range" id='range' min='0' max='100' value="0" oninput="changeRange()">
+    <input type="number" id='number' min='0' max="100" onchange="changeNumber()">
+    <div class="scale" id="scale">
+        <div class="color" id="color"></div>
+    </div>
+    <script src='main.js'></script>
+</body>
+
+</html>
